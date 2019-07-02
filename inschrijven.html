@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=deivce-width, initial-scale=1.0" />
+		<title>Inschrijven</title>
+		<link rel="stylesheet" type="text/css" href="css/style1.css" />
+	</head>
+	<body>
+		<!-- in de header staat op elke pagina het logo en de navigatie van de website -->
+		<header>
+			<!-- Het logo van het imperium theater staat bovenaan op de pagina en kan ook worden gebruikt als homeknop -->
+			<a href="index.html"><img class="logo" src="img/logo.svg" alt="logo van het Imperium theater">
+				<!-- Lijst met navigatie knoppen -->
+				<nav class="mainnav">
+				<ul>
+					<li><a href="agenda.html">Agenda</a></li>
+					<li><a href="reserveren.html">Reserveren</a></li>
+					<li><a href="huren.html">Huren</a></li>
+					<li><a href="archief.html">Archief</a></li>
+					<li><a href="fotoboek.html">Fotoboek</a></li>
+					<li><a href="overons.html">Over Ons</a></li>
+					<li><a href="wordlid.html">Word Lid</a></li>
+					<li><a href="account.html">Mijn Account</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class=mainflex>
+				<nav class="sidenav">
+					<ul>
+						<li><a href="audities.html">Audities</a></li>
+						<li><a href="repetitieproces.html">Repetitieproces</a></li>
+						<li><a href="contributie.html">Contributie</a></li>
+						<li><a href="inzet.html">Inzet</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="inschrijven.html">Inschrijven</a></li>
+					</ul>
+				</nav>
+				<div class="txt">
+					<h1>Schrijf je nu in!</h1>
+					<p>Ongelooflijk leuk dat je interesse toont in het lidmaatschap van Imperium! We zijn immers altijd op zoek naar nieuwe talentvolle spelers en mensen die onze toneelproducties willen ondersteunen. Want lid worden van Imperium betekent niet alleen toneelspelen, maar vooral ook je inzetten voor de vereniging en voor de eigen voorstellingen van Imperium.
+						<br>
+						<br>
+						Vul het bijgevoegde aanmeldformulier in en mail dit naar het onderstaande adres. Na toezending ontvang je een reactie van ons en zullen we je uitnodigen voor de eerstkomende auditieavond. De audities zijn meestal in september, november, januari en juni.</p>
+						<br>
+						<br>
+					<button id="formBtn">Open het inschrijfformulier!</button>
+					<div id="formPop" class="formulier">
+						<div class="formContent">
+							<span class="sluitknop">&times;</span>
+							<img class="logo" src="img/logo.svg" alt="logo van het Imperium theater">
+							<form action="/action_page.php">
+							<h2>Algemene Gegevens</h2>
+							<label class="form-labels">Naam:</label><input class="form-fields" type="text" name="naam" placeholder="Voor en Achternaam" required><br><br>
+							<label class="form-labels">Adres & huisnummer:</label> <input class="form-fields"type="text" name="adres" required><br><br>
+							<label class="form-labels">Postcode:</label> <input class="form-fields" type="text" name="postcode" placeholder="1234 AB" required><br><br>
+							<label class="form-labels">Woonplaats:</label> <input class="form-fields" type="text" name="woonplaats" required><br><br>
+							<label class="form-labels">Telefoonnummer:</label> <input class="form-fields"type="text" name="telefoonnummer" required><br><br>
+							<label class="form-labels">E-mailadres:</label> <input class="form-fields"type="text" name="email" required><br><br>
+							<label class="form-labels">Geboortedatum:</label> <input class="form-fields" type="text" name="geboortedatum" placeholder="DD-MM-JJJJ" required>  <br><br>
+							<h2>Ondersteunend Commissiewerk</h2>
+							<p>Kruis aan wat van toepassing is:</p>
+							<input type="checkbox" name="decor" value="decor bouwen">Decor Bouwen<br>
+  						<input type="checkbox" name="kleding" value="kleding maken">Kleding Maken / Uitzoeken<br>
+  						<input type="checkbox" name="teksten" value="teksten schrijven">Teksten schrijven voor IMPRESSIE en website<br>
+							<input type="checkbox" name="techniek" value="techniek licht geluid">Techniek (licht / geluid)<br>
+						  <input type="checkbox" name="algemene" value="algemene pr">Algemene PR activiteiten<br>
+						  <input type="checkbox" name="fotos" value="fotos maken">Foto's maken voor PR<br>
+							<input type="checkbox" name="website" value="website onderhoud">Website Onderhouden<br>
+							<input type="checkbox" name="anders" value="anders namelijk:">Anders, namelijk:<br>
+							<input class="form-fields" type="textarea" name="anders">
+							<h2>Interesse</h2>
+							<p>Kruis aan wat van toepassing is:</p>
+							<input type="checkbox" name="toneellid" value="lid van toneel">Ik word toneelspelend lid met aanvullende activiteiten<br>
+  						<input type="checkbox" name="commissielid" value="lid van commissie">Ik word alleen lid van een commissie<br>
+							<h2>Overige Opmerkingen</h2>
+							<textarea></textarea>
+							<br>
+							<input class="submit-button" type="submit" value="Verstuur">
+						</div>
+					</div>
+				</div>
+				<div>
+					<img class="fotos" src="img/groepsfoto1.jpg" alt="groepsfoto1">
+					<img class="fotos" src="img/groepsfoto2.jpg" alt="groepsfoto2">
+				</div>
+			</div>
+		</main>
+		<!-- in de footer staat op elke pagina relevante informatie en twee social media knoppen -->
+		<footer>
+			<!-- Deze div bevat de hele footer. Ik heb de hele footer in een div gestopt om gebruik te maken van flexbox (oefening voor mezelf) -->
+			<div class="footerflex">
+				<!-- Deze div bevat de tekst linksonderin de pagina -->
+				<div>
+					Theater Imperium
+					<br>
+					Oude Vest 33e
+					<br>
+					2312 XR Leiden
+					<br>
+					071 5141035
+				</div>
+				<!-- Deze div bevat de tekst van contact, route en nieuwsbrief met klikbare links naar deze pagina's (alleen contact is beschikbaar)-->
+				<div>
+					<li><a href="Contact.html">Contact</a></li>
+					<li><a href="Contact.html">Route</a></li>
+					<li><a href="Contact.html">Nieuwsbrief</a></li>
+				</div>
+				<!-- Deze div bevat de 'Volg Ons!' tekst met de social media icoontjes die klikbaar zijn en naar de social media linken van het imperium theater -->
+				<div class="icoontjes">
+					Volg Ons!
+					<li><a href="https://www.facebook.com/ToneelgroepImperium?fref=ts"><img class="facebook" src="img/facebook.png" alt="logo van facebook">
+					<li><a href="https://twitter.com/imperiumtheater"><img class="twitter" src="img/twitter.png" alt="logo van twitter">
+				</div>
+				<!-- Het logo van het imperium theater staat ook rechtsonderaan op elke pagina en kan ook worden gebruikt als homeknop -->
+				<div>
+					<a href="index.html"><img class="footerlogo" src="img/logo.svg" alt="logo van het Imperium theater">
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="scripts/main.js"></script>
+	</body>
+</html>
